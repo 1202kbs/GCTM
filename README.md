@@ -2,14 +2,6 @@
 
 Official PyTorch implementation of Generalized Consistency Trajectory Models for Image Manipulation by [Beomsu Kim](https://scholar.google.co.kr/citations?user=TofIFUgAAAAJ&hl=en)\*, Jaemin Kim\*, [Jeongsol Kim](https://scholar.google.com/citations?user=ZaVNwcQAAAAJ&hl=en), and [Jong Chul Ye](https://scholar.google.com/citations?user=HNMjoNEAAAAJ&hl=en) (\*Equal contribution).
 
-<p align="center">
-  <img src="https://github.com/cyclomon/UNSB/blob/main/assets/gif.gif" />
-</p>
-
-<p align="center">
-  <img src="https://github.com/cyclomon/UNSB/blob/main/assets/main2.jpg" />
-</p>
-
 Diffusion models suffer from two limitations.
 - They require large number of function evaluations (NFEs) to generate high-fidelity images.
 - They only enable noise-to-image generation.
@@ -20,25 +12,48 @@ We propose the **Generalized Consistency Trajectory Model (GCTM)**, which learns
 - Traversal between arbitrary points of the PFODE with NFE = 1.
 
 <p align="center">
-  <img src="https://github.com/cyclomon/UNSB/blob/main/assets/main_result_2.jpg" />
+  <img src="https://github.com/1202kbs/GCTM/blob/main/assets/figure1.PNG"  width="60%" height="60%" />
 </p>
 
-Quantitatively, out method out-performed all one-step baseline methods based on GANs.
+Consequently, GCTMs are applicable to a wide variety of tasks, such as but not limited to
+- Unconditional generation
+- Image-to-image translation
+- Zero-shot and supervised image restoration
+- Image editing
+- Latent manipulation
+
+### Unconditional Generation
 
 <p align="center">
-  <img src="https://github.com/cyclomon/UNSB/blob/main/assets/table.png" width="80%" height="80%" />
+  <img src="https://github.com/1202kbs/GCTM/blob/main/assets/figure2.PNG"  width="60%" height="60%" />
 </p>
 
-The superior performance of UNSB can be attributed to the fact that UNSB generates images in multiple stages. Indeed, we observe in the graph below that sample quality improves with more NFEs.
+### Image-to-Image Translation
 
 <p align="center">
-  <img src="https://github.com/cyclomon/UNSB/blob/main/assets/NFE_FID.png" width="40%" height="40%" />
+  <img src="https://github.com/1202kbs/GCTM/blob/main/assets/figure3.PNG"  width="60%" height="60%" />
 </p>
 
-However, occasionally, too much NFEs led to "over-translation", where the target domain style is excessively applied to the source image. A failure case is shown below. This may be the reason behind increasing FID for some datasets at NFEs 4 or 5.
+### Zero-shot and Supervised Image Restoration
 
 <p align="center">
-  <img src="https://github.com/cyclomon/UNSB/blob/main/assets/Main_failure.png" width="40%" height="40%" />
+  <img src="https://github.com/1202kbs/GCTM/blob/main/assets/figure4.PNG"  width="60%" height="60%" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/1202kbs/GCTM/blob/main/assets/figure5.PNG"  width="60%" height="60%" />
+</p>
+
+### Image Editing
+
+<p align="center">
+  <img src="https://github.com/1202kbs/GCTM/blob/main/assets/figure6.PNG"  width="60%" height="60%" />
+</p>
+
+### Latent Manipulation
+
+<p align="center">
+  <img src="https://github.com/1202kbs/GCTM/blob/main/assets/figure7.PNG"  width="60%" height="60%" />
 </p>
 
 ## Environment

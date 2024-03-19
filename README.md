@@ -47,7 +47,7 @@ Consequently, GCTMs are applicable to a wide variety of tasks, such as but not l
 ### Image Editing
 
 <p align="center">
-  <img src="https://github.com/1202kbs/GCTM/blob/main/assets/figure6.PNG"  width="60%" height="60%" />
+  <img src="https://github.com/1202kbs/GCTM/blob/main/assets/figure6.PNG"  width="80%" height="80%" />
 </p>
 
 ### Latent Manipulation

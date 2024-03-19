@@ -12,7 +12,7 @@ We propose the **Generalized Consistency Trajectory Model (GCTM)**, which learns
 - Traversal between arbitrary points of the PFODE with NFE = 1.
 
 <p align="center">
-  <img src="https://github.com/1202kbs/GCTM/blob/main/assets/figure1.PNG"  width="60%" height="60%" />
+  <img src="https://github.com/1202kbs/GCTM/blob/main/assets/figure1.PNG"  width="70%" height="70%" />
 </p>
 
 Consequently, GCTMs are applicable to a wide variety of tasks, such as but not limited to
@@ -25,23 +25,23 @@ Consequently, GCTMs are applicable to a wide variety of tasks, such as but not l
 ### Unconditional Generation
 
 <p align="center">
-  <img src="https://github.com/1202kbs/GCTM/blob/main/assets/figure2.PNG"  width="60%" height="60%" />
+  <img src="https://github.com/1202kbs/GCTM/blob/main/assets/figure2.PNG"  width="70%" height="70%" />
 </p>
 
 ### Image-to-Image Translation
 
 <p align="center">
-  <img src="https://github.com/1202kbs/GCTM/blob/main/assets/figure3.PNG"  width="60%" height="60%" />
+  <img src="https://github.com/1202kbs/GCTM/blob/main/assets/figure3.PNG"  width="70%" height="70%" />
 </p>
 
 ### Zero-shot and Supervised Image Restoration
 
 <p align="center">
-  <img src="https://github.com/1202kbs/GCTM/blob/main/assets/figure4.PNG"  width="60%" height="60%" />
+  <img src="https://github.com/1202kbs/GCTM/blob/main/assets/figure4.PNG"  width="70%" height="70%" />
 </p>
 
 <p align="center">
-  <img src="https://github.com/1202kbs/GCTM/blob/main/assets/figure5.PNG"  width="60%" height="60%" />
+  <img src="https://github.com/1202kbs/GCTM/blob/main/assets/figure5.PNG"  width="70%" height="70%" />
 </p>
 
 ### Image Editing

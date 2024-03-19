@@ -1,0 +1,31 @@
+CUDA_VISIBLE_DEVICES=0 python train_gctm_adam_sep.py \
+--datasets 'edges2shoes' \
+--base_dir 'results/pix2pix/edges2shoes_1' \
+--ckpt_name 'idx_46750_curr.pt' \
+--size 64 \
+--X1_eps_std 0.05 \
+--vars 0.23 0.01 0.0 \
+--coupling 'pix2pix' \
+--coupling_bs 64 \
+--disc_steps 1024 \
+--init_steps 4 \
+--discretization 'edm_n2i' \
+--smin 0.002 \
+--smax 500.0 \
+--edm_rho 7 \
+--t_sm_dist 'beta_3_1' \
+--ODE_N 1 \
+--param 'LIN' \
+--bs 64 \
+--lr 1e-4 \
+--rho 1.0 \
+--lmda_CTM 1.0 \
+--ctm_distance 'ph' \
+--ema_decay 0.999 \
+--n_grad_accum 1 \
+--nc 3 \
+--model_channels 128 \
+--num_blocks 4 \
+--dropout 0.1 \
+--FID_bs 250 \
+--offline

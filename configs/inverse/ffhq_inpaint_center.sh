@@ -1,0 +1,29 @@
+CUDA_VISIBLE_DEVICES=1 python train_gctm_inverse.py \
+--datasets 'ffhq' \
+--base_dir 'results/inverse/ffhq_inpaint_center' \
+--size 64 \
+--X1_eps_std 0.0 \
+--vars 0.25 0.46 0.22 \
+--coupling 'inverse_inpaint-center' \
+--coupling_bs 64 \
+--disc_steps 1024 \
+--init_steps 4 \
+--discretization 'edm_n2i' \
+--smin 0.002 \
+--smax 80.0 \
+--edm_rho 7 \
+--t_sm_dists 'beta_3_1' \
+--t_ctm_dists 1.0 1.0 \
+--ODE_N 1 \
+--param 'LIN' \
+--bs 64 \
+--lr 1e-4 \
+--lmda_CTM 10.0 \
+--ctm_distance 'ph' \
+--ema_decay 0.999 \
+--n_grad_accum 1 \
+--nc 3 \
+--model_channels 128 \
+--num_blocks 4 \
+--dropout 0.1 \
+--offline

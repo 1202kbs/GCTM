@@ -1,6 +1,6 @@
 # Generalized Consistency Trajectory Models
 
-Official PyTorch implementation of Generalized Consistency Trajectory Models for Image Manipulation by [Beomsu Kim](https://scholar.google.co.kr/citations?user=TofIFUgAAAAJ&hl=en)\*, Jaemin Kim\*, [Jeongsol Kim](https://scholar.google.com/citations?user=ZaVNwcQAAAAJ&hl=en), and [Jong Chul Ye](https://scholar.google.com/citations?user=HNMjoNEAAAAJ&hl=en) (\*Equal contribution).
+Official PyTorch implementation of [Generalized Consistency Trajectory Models for Image Manipulation](https://arxiv.org/abs/2403.12510) by [Beomsu Kim](https://scholar.google.co.kr/citations?user=TofIFUgAAAAJ&hl=en)\*, Jaemin Kim\*, [Jeongsol Kim](https://scholar.google.com/citations?user=ZaVNwcQAAAAJ&hl=en), and [Jong Chul Ye](https://scholar.google.com/citations?user=HNMjoNEAAAAJ&hl=en) (\*Equal contribution).
 
 Diffusion models suffer from two limitations.
 - They require large number of function evaluations (NFEs) to generate high-fidelity images.

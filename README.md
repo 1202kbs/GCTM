@@ -8,7 +8,7 @@ Diffusion models suffer from two limitations.
 
 We propose the **Generalized Consistency Trajectory Model (GCTM)**, which learns the probability flow ODE (PFODE) between arbitrary distributions via Flow Matching theory. Thus, GCTMs are capable of
 - Noise-to-image and image-to-image translation,
-- Score or velocity evluation with NFE = 1,
+- Score or velocity evaluation with NFE = 1,
 - Traversal between arbitrary points of the PFODE with NFE = 1.
 
 <p align="center">
@@ -58,19 +58,28 @@ Consequently, GCTMs are applicable to a wide variety of tasks, such as but not l
 
 ## Environment
 
-TBA
+- CUDA version 12.0
+- NVCC version 11.5.119
+- Python version 3.11.5
+- PyTorch version 2.0.1+cu118
+- Torchvision version 0.15.2+cu118
+- Torchaudio version 2.0.2+cu118
 
-## Dataset Download
+## Datasets
 
-TBA
+- CIFAR10 : https://www.cs.toronto.edu/~kriz/cifar.html
+- FFHQ : https://github.com/NVlabs/ffhq-dataset
+- Image-to-Image : https://efrosgans.eecs.berkeley.edu/pix2pix/datasets/
 
 ## Training 
 
-TBA
+Use ```train_gctm.py``` to train unconditional and image-to-image models, and use ```train_gctm_inverse.py``` to train supervised image restoration models. To train unconditional or image-to-image models, one first needs to create a ```FID_stats``` directory and save the Inception activation statistics in the format ```(dataset name)_(resolution).npz```. Inception activation statistics can be computed using ```save_fid_stats``` function in ```./pytorch_fid/fid_score.py```.
 
-## Test & Evaluation
+Example training scripts are provided in the ```./configs``` directory. For instance, to train a CIFAR10 unconditional model with independent coupling, one may use the command
 
-TBA
+```
+sh ./configs/unconditional/cifar10.sh
+```
 
 ## References
 

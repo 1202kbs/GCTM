@@ -73,7 +73,7 @@ Consequently, GCTMs are applicable to a wide variety of tasks, such as but not l
 
 ## Training 
 
-Use ```train_gctm.py``` to train unconditional and image-to-image models, and use ```train_gctm_inverse.py``` to train supervised image restoration models. To train unconditional or image-to-image models, one first needs to create a ```FID_stats``` directory and save the Inception activation statistics in the format ```(dataset name)_(resolution).npz```. Inception activation statistics can be computed using ```save_fid_stats``` function in ```./pytorch_fid/fid_score.py```.
+Use ```train_gctm.py``` to train unconditional and image-to-image models, and use ```train_gctm_inverse.py``` to train supervised image restoration models. To train unconditional or image-to-image models, one first needs to create a ```FID_stats``` directory and save the Inception activation statistics in the format ```(dataset name)_(resolution).npz```. Inception activation statistics can be computed using ```save_fid_stats``` function in ```./pytorch_fid/fid_score.py```. Or, you can just comment out FID evaluation lines in the training code.
 
 Example training scripts are provided in the ```./configs``` directory. For instance, to train a CIFAR10 unconditional model with independent coupling, one may use the command
 

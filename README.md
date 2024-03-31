@@ -89,7 +89,7 @@ If you find this paper useful for your research, please consider citing
   kim2024gctm,
   title={Generalized Consistency Trajectory Models for Image Manipulation},
   author={Beomsu Kim and Jaemin Kim and Jeongsol Kim and Jong Chul Ye},
-  journal={arXiv preprint},
+  journal={arXiv preprint arXiv:2403.12510},
   year={2024}
 }
 ```
